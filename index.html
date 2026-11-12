@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#213b4b">
+  <title>PinguBuy spreadsheet | Categorieën, maten en QC-foto’s</title>
+  <meta name="description" content="Gebruik de PinguBuy spreadsheet als startpunt voor schoenen, kleding en accessoires. Vergelijk maten, bekijk QC-foto’s en bereken je totale kosten.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PinguBuy spreadsheet | Categorieën, maten en QC-foto’s">
+  <meta property="og:description" content="Blader door tien CAFANS-categorieën en controleer maat, productfoto’s en verzendkosten vóór je bestelt.">
+  <style>
+    :root { color-scheme: light; --ink:#213b4b; --muted:#495d69; --paper:#faf6ee; --line:#c8c9bf; --accent:#f1c9a5 }
+    * { box-sizing:border-box }
+    body { margin:0; background:var(--paper); color:var(--ink); font:1rem/1.6 system-ui,sans-serif }
+    .wrap { width:min(1120px, calc(100% - 2rem)); margin-inline:auto }
+    header,footer { background:var(--ink); color:var(--paper); padding:1rem 0 }
+    a { color:inherit }
+    a:focus-visible,summary:focus-visible { outline:3px solid #b55629; outline-offset:4px }
+    header a { font-weight:800; letter-spacing:.08em }
+    h1,h2,h3,p,figure { margin:0 }
+    h1,h2 { font-family:Georgia,serif; font-weight:500; line-height:1.08; text-wrap:balance }
+    h1 { font-size:clamp(2.65rem,7vw,5.7rem); letter-spacing:-.05em }
+    h2 { font-size:clamp(1.7rem,4vw,2.6rem); margin-bottom:.65rem }
+    h3 { line-height:1.3; margin-bottom:.5rem }
+    p + p { margin-top:.7rem }
+    .hero { display:grid; grid-template-columns:1.5fr 1fr; align-items:center; gap:clamp(1rem,5vw,4rem); padding-block:2rem }
+    .hero p { max-width:55ch; margin-top:1rem }
+    .photo { background:#fff; border:1px solid var(--line) }
+    img { display:block; width:100%; aspect-ratio:1; height:auto; object-fit:contain; background:#fff }
+    .hero img { aspect-ratio:4/3 }
+    figcaption { padding:.5rem .7rem; color:var(--muted); font-size:.875rem }
+    .category { border-block:1px solid var(--line); padding-block:1.4rem }
+    ul { padding-left:1.2rem }
+    .category ul { list-style:none; padding:0; margin:1rem 0 0; display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.5rem }
+    .category a { display:block; padding:.65rem .8rem; border:1px solid var(--line); background:#fff; text-decoration:none; font-weight:650 }
+    .category a:hover,.button { background:var(--accent) }
+    section { margin-block:2rem }
+    .gallery,.articles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem }
+    .gallery { grid-template-columns:repeat(4,minmax(0,1fr)); margin-top:1rem }
+    .gallery img { object-fit:cover }
+    article { border-top:3px solid var(--ink); padding:.8rem; background:#fff }
+    details { border-top:1px solid var(--line); padding:.8rem 0 }
+    summary { cursor:pointer; font-weight:700 }
+    details p { margin:.45rem 0 0 }
+    .button { display:inline-block; padding:.7rem 1rem; color:var(--ink); font-weight:750; text-decoration:none }
+    @media(max-width:640px) { .hero,.articles { grid-template-columns:1fr } .gallery { grid-template-columns:repeat(2,minmax(0,1fr)) } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"CollectionPage","name":"PinguBuy spreadsheet","inLanguage":"nl","description":"Nederlandstalige gids voor productcategorieën, maten, QC-foto’s en verzendkosten."},
+      {"@type":"FAQPage","inLanguage":"nl","mainEntity":[
+        {"@type":"Question","name":"Wat is een PinguBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Het is een zoekterm voor een overzicht van productlinks, meestal geordend per categorie. Op deze pagina leiden de categorielinks naar CAFANS."}},
+        {"@type":"Question","name":"Hoe kies ik mijn maat als een EU-maat ontbreekt?","acceptedAnswer":{"@type":"Answer","text":"Vergelijk de afmetingen in centimeters met een schoen of kledingstuk dat goed past. Controleer of de tabel lichaamsmaten of productmaten toont."}},
+        {"@type":"Question","name":"Wat kun je aan QC-foto’s zien?","acceptedAnswer":{"@type":"Answer","text":"Met duidelijke foto’s kun je de kleur, maatlabels en zichtbare afwerking beoordelen. De echtheid van een merkartikel vraagt om aanvullende verificatie."}},
+        {"@type":"Question","name":"Hoe vergelijk ik levering naar Nederland en België?","acceptedAnswer":{"@type":"Answer","text":"Vraag voor je eigen postcode een offerte aan met hetzelfde pakketgewicht en dezelfde afmetingen. Vergelijk daarna de totaalprijs in euro, de geschatte levertijd en de inbegrepen kosten."}}
+      ]}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/dqbpr/">
+</head>
+<body>
+  <header><div class="wrap"><a href="https://www.cafans.com">CAFANS</a></div></header>
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>PinguBuy spreadsheet</h1>
+        <p>Zoek je PinguBuy finds voor schoenen, kleding of accessoires? Begin bij een CAFANS-categorie. Gebruik de koopgids hieronder om productlinks te vergelijken en vóór je bestelt de maat, QC-foto’s en totaalprijs te controleren.</p>
+      </div>
+      <figure class="photo">
+        <img src="https://alssports.vteximg.com.br/arquivos/ids/3879892/10613661x1238466.jpg?v=639047797771100000" width="640" height="480" fetchpriority="high" alt="Witte Nike Air Force 1 Texture sneaker met een geperforeerde neus">
+        <figcaption>Nike Air Force 1 Texture</figcaption>
+      </figure>
+    </div>
+
+    <nav class="category" aria-labelledby="categories">
+      <h2 id="categories">Blader door de categorieën</h2>
+      <ul>
+        <li><a href="https://cafans.com/category-911-Shoes.html">Schoenen</a></li>
+        <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies en truien</a></li>
+        <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+        <li><a href="https://cafans.com/category-914-Jackets.html">Jassen</a></li>
+        <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Broeken en shorts</a></li>
+        <li><a href="https://cafans.com/category-916-Headwear.html">Hoofddeksels</a></li>
+        <li><a href="https://cafans.com/category-917-Sets.html">Sets</a></li>
+        <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Ondergoed</a></li>
+        <li><a href="https://cafans.com/category-919-Jersey.html">Sportshirts</a></li>
+        <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="guide">
+      <h2 id="guide">Van productlink tot bestelling</h2>
+      <div class="articles">
+        <article>
+          <h3>Sneakermaten en kledingmaten vergelijken</h3>
+          <p>Meet voor sneakers de binnenzool van een goed passend paar. Meet bij een hoodie de borstbreedte plat van oksel tot oksel en neem ook de schouderbreedte en mouwlengte op. Vergelijk bij broeken de taillebreedte en binnenbeenlengte. Controleer bij sets of beide delen dezelfde maat hebben.</p>
+        </article>
+        <article>
+          <h3>QC-foto’s per product controleren</h3>
+          <p>Vraag, indien beschikbaar, foto’s van jouw gekozen uitvoering. Bekijk bij sneakers het zoolprofiel, de hiel en het maatlabel. Zoom bij een jas in op de rits en naden. Controleer bij petten de sluiting en hoofdomtrek. Vraag bij sieraden naar het materiaal en de lengte van de ketting.</p>
+        </article>
+        <article>
+          <h3>Verzendkosten naar Nederland en België</h3>
+          <p>Noteer de artikelprijs, de lokale bezorgkosten en de internationale verzending apart. Vergelijk offertes in euro en controleer welke belastingen en afhandelingskosten zijn inbegrepen. Vraag of de vervoerder rekent met werkelijk gewicht of volumegewicht. Vergelijk een losse zending met een gecombineerd pakket als je meerdere artikelen kiest.</p>
+        </article>
+        <article>
+          <h3>Productlinks, voorraad en retourvoorwaarden</h3>
+          <p>Open de productpagina opnieuw voordat je betaalt. Kijk of jouw kleur en maat selecteerbaar zijn en vergelijk de productcode met de omschrijving. Controleer wie de verkoper is, wanneer de retourtermijn ingaat en wie de retourkosten draagt. Vraag bij merkartikelen om een controleerbaar aankoopbewijs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="details">
+      <h2 id="details">Details om op te letten</h2>
+      <p>Deze merkfoto’s illustreren productdetails. Controleer het actuele aanbod via de categoriepagina’s.</p>
+      <div class="gallery">
+        <figure class="photo">
+          <img src="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-surchemise-en-denim-brode-monogram--HVA07WY38650_PM2_Front%20view.png?hei=480&amp;wid=480&amp;fmt=webp" width="480" height="480" loading="lazy" decoding="async" alt="Blauwe Louis Vuitton denim overshirt met geborduurd monogram">
+          <figcaption>Louis Vuitton denim · patroon en knopen</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Beige Gucci baseballpet met GG-patroon en bruine afwerking">
+          <figcaption>Gucci-pet · vorm en afwerking</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="https://assets.hermes.com/is/image/hermesproduct/carre-90-de-toujours-brides-de-gala--001266S%2075-detail-wm-5-0-0-800-800_g.jpg?wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Hermès Brides de Gala sjaal met zwarte rand en goudkleurig tuigpatroon">
+          <figcaption>Hermès Carré · rand en dessin</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="https://assets.christiandior.com/is/image/diorprod/LOOK_H_24_3_LOOK_128_E39?%24lookDefault_GH-GHC%24=&amp;bfc=on&amp;crop=568%2C0%2C1864%2C2000&amp;qlt=75&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Dior CD Icon halsketting met zilverkleurige hanger op een wit T-shirt">
+          <figcaption>Dior-halsketting · hanger en draaglengte</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Veelgestelde vragen</h2>
+      <details open><summary>Wat is een PinguBuy spreadsheet?</summary><p>Het is een zoekterm voor een overzicht van productlinks, meestal geordend per categorie. Op deze pagina leiden de categorielinks naar CAFANS.</p></details>
+      <details><summary>Hoe kies ik mijn maat als een EU-maat ontbreekt?</summary><p>Vergelijk de afmetingen in centimeters met een schoen of kledingstuk dat goed past. Controleer of de tabel lichaamsmaten of productmaten toont.</p></details>
+      <details><summary>Wat kun je aan QC-foto’s zien?</summary><p>Met duidelijke foto’s kun je de kleur, maatlabels en zichtbare afwerking beoordelen. De echtheid van een merkartikel vraagt om aanvullende verificatie.</p></details>
+      <details><summary>Hoe vergelijk ik levering naar Nederland en België?</summary><p>Vraag voor je eigen postcode een offerte aan met hetzelfde pakketgewicht en dezelfde afmetingen. Vergelijk daarna de totaalprijs in euro, de geschatte levertijd en de inbegrepen kosten.</p></details>
+    </section>
+  </main>
+  <footer><div class="wrap"><a class="button" href="https://www.cafans.com">Bekijk de CAFANS-catalogus</a></div></footer>
+  <!--
+    Secundaire zoektermen: PinguBuy finds; PinguBuy koopgids; PinguBuy QC-foto’s; PinguBuy verzendkosten.
+    Longtail: PinguBuy spreadsheet schoenen; PinguBuy spreadsheet hoodies; PinguBuy spreadsheet accessoires;
+    PinguBuy productlinks vergelijken; sneakermaat in centimeters kiezen; binnenzool van sneakers meten;
+    borstbreedte van een hoodie meten; broekmaat op binnenbeenlengte kiezen; kledingmaat zonder EU-maat;
+    QC-foto’s van sneakers beoordelen; maatlabel op een productfoto controleren; rits en naden van een jas controleren;
+    verstelbare sluiting van een pet bekijken; lengte van een halsketting vergelijken; voorraad per kleur en maat controleren;
+    PinguBuy verzendkosten naar Nederland; PinguBuy verzendkosten naar België; totaalprijs van een bestelling in euro;
+    pakket vergelijken op volumegewicht; verzendkosten van gecombineerde pakketten; retourtermijn vóór aankoop controleren;
+    aankoopbewijs voor merkartikelen opvragen.
+    Zoekonderzoek: de eerste Bing-resultatenpagina kon niet rechtstreeks worden gecontroleerd.
+    Openbare zoekresultaten gebruikt voor themakeuze: pingubuyspreadsheet.com, sopel.fit, pingubuy.org,
+    repsheet.net, pingubuyfinds.com, hacoosheetlinks.com, mickeybuys.com, litbuysheetlinks.com,
+    spreadsheet-kakobuy.com en findhaul.com.
+  -->
+</body>
+</html>
